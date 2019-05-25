@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+		<style type="text/css">
+		   .header{position:fixed;width:100%;height:70px;background:#073935;top:0;left:0;color:white;}
+		   body{background:linear-gradient(to bottom right,white,#bcbdc4);margin:0px;padding:0px;
+		   opacity:0.9;height:800px;text-decoration:none;}
+		   #profilearea{top:25px;margin-left:1200px;height:15px;font-size:20px;} 
+		   #profilearea1{top:25px;margin-left:1270px;height:15px;font-size:20px;}
+		   #pf{text-align:center;color:pink;}
+			
+		 
+		 
+		   .div1{height:580px;width:800px;border:2px solid black;margin-left:300px;margin-top:140px;
+		   box-shadow:0px 0px 11px 1px rgba(0,0,0,1);background-color:#b2b2b2;} 
+			
+		</style>
+  </head>
+  <body>
+        <div class ="header">
+		         <div id = "pf" class = "header"><h1>Update Employee Details</h1></div>
+		         <div id = "profilearea" class = "header"><a href ="Home"><font color="white">Home</font></a></div>
+		         <div id = "profilearea1" class = "header"><a href ="logout"><font color="white">Logout</font></a></div>
+		</div>         
+  
+       
+        <div class="div1">
+		    <form action="UpdateEmployee">
+				<br>
+				<center><h2>EMPLOYEE PERSONAL DETAILS</h2><center>
+				EMPLOYEE ID:<input type="text" name="EMPLOYEEID">
+				<select name="EMPLOYEE PERSONAL DETAILS">
+						<option>     </option>
+				        <option value="First_Name">FIRST NAME</option>
+						<option value="Last_Name">LAST NAME</option>   
+						<option value="Date_of_Birth">DATE OF BIRTH</option>
+						<option value="Gender">GENDER</option>
+						<option value="Marital_Status">MARITAL STATUS</option> 
+						<option value="Fathers_Name">FATHER NAME</option>
+						<option value="Mothers_Name">MOTHER NAME</option>
+						<option value="Nationality">NATIONALITY</option>
+						<option value="language">LANGUAGE</option>
+						<option value="Blood_Group">BLOOD GROUP</option>
+						<option value="Mobile_Phone">MOBILE NUMBER</option>
+						<option value="EMail">EMAIL</option>
+						<option value="Password">PASSWORD</option>
+				</select>     
+				<input type="hidden" value="1" name="formnumber">
+				<input type="text" name="updatedvalue">
+				<input type="submit" value="update">
+			</form><br>
+			<form action="UpdateEmployee">
+		        <hr>
+		        <br>
+				<h2>EMPLOYEE CONTACT DETAILS</h2>
+				EMPLOYEE ID:<input type="text" name="EMPLOYEEID">
+				<select name="EMPLOYEE CONTACT DETAILS">
+						<option>     </option>
+				        <option value="Home_Phone">HOME PHONE NUMBER</option>
+						<option value="Street_Address">ADDRESS</option>   
+						<option value="City">CITY</option>
+						<option value="State">STATE</option>
+						<option value="Country">COUNTRY</option> 
+						<option value="Pincode">pincode</option>
+				</select>     
+				<input type="hidden" value="2" name="formnumber">
+				<input type="text" name="updatedvalue">
+				<input type="submit" value="update">
+			</form>
+			<form action="UpdateEmployee"><br>
+				<hr>
+				<br>
+				<h2>EMPLOYEE EDUCATIONAL DETAILS</h2>
+				EMPLOYEE ID:<input type="text" name="EMPLOYEEID">
+				<select name="EMPLOYEE EDUCATIONAL DETAILS">
+						<option>     </option>
+				        <option value="1">SSC COURSE</option>
+						<option value="2">SSC NAME OF SCHOOL</option>   
+						<option value="3">SSC Board</option>
+						<option value="4">SSC YEAR OF PASSING</option>
+						<option value="5">SSC PERCENTAGE</option>
+					    <option value="6">INTERMEDIATE COURSE</option>
+				        <option value="7">INTERMEDIATE COLLEGE NAME</option>   
+						<option value="8">INTERMEDIATE Board</option>
+						<option value="9">INTERMEDIATE YEAR OF PASSING</option>
+						<option value="10">INTERMEDIATE PERCENTAGE</option>
+						<option value="11">GRADUATION COURSE</option>
+				        <option value="12">GRADUATION COLLEGE NAME</option>   
+						<option value="13">GRADUATION University</option>
+						<option value="14">GRADUATION YEAR OF PASSING</option>
+						<option value="15">GRADUATION PERCENTAGE</option>
+						<option value="16">MASTERS COURSE</option>
+				        <option value="17">MASTERS COLLEGE NAME</option>   
+						<option value="18">MASTERS University</option>
+						<option value="19">MASTERS YEAR OF PASSING</option>
+						<option value="20">MASTERS PERCENTAGE</option>  
+				        <option value="21">PHD COURSE</option>
+				        <option value="22">PHD COLLEGE NAME</option>   
+						<option value="23">PHD University</option>
+						<option value="24">PHD YEAR OF PASSING</option>
+						<option value="25">PHD PERCENTAGE</option>
+						  
+				</select>
+				<input type="hidden" value="3" name="formnumber">     
+				<input type="text" name="updatedvalue">
+				<input type="submit" value="update">
+		    </form>
+		    <form action="UpdateEmployee">
+				<br><hr>
+				<br>
+				<h2>EMPLOYEE PROFFESIONAL DETAILS</h2>
+				EMPLOYEE ID:<input type="text" name="EMPLOYEEID">
+				<select name="EMPLOYEE PROFFESIONAL DETAILS">
+						<option>     </option>
+				        <option value="Date_of_Joining">DATE OF JOINING</option>
+						<option value="Date_of_Relieving">DATE OF RELIEVING</option>   
+						<option value="Job_Title">JOB TITLE</option>
+						<option value="salary">SALARY</option>
+						<option value="work_experience">WORKING EXPERIENCE</option> 
+				        <option value="Next_Company">NEXT COMPANY NAME</option> 
+				</select>
+				<input type="hidden" value="4" name="formnumber">     
+				<input type="text" name="updatedvalue">
+				<input type="submit" value="update">
+		    </form>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+body {
+	background: linear-gradient(to bottom right, white, #bcbdc4);
+	margin: 0px;
+	padding: 0px;
+	opacity: 0.9;
+	height: 2000px;
+	text-decoration: none;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background: #073935;
+	top: 0;
+	left: 0;
+	color: white;
+}
+
+#profilearea {
+	top: 29px;
+	margin-left: 1200px;
+	height: 15px;
+	font-size: 20px;
+}
+
+#profilearea1 {
+	top: 29px;
+	margin-left: 1280px;
+	height: 15px;
+	font-size: 20px;
+}
+
+#pf {
+	text-align: center;
+	color: pink;
+	margin-left: 65px;
+}
+
+#side {
+	top: 170px;
+	left: 100px;
+	position: absolute;
+	width: 400px;
+	height: 740px;
+	font-family: verdana;
+	font-size: 25px;
+}
+
+#side1 {
+	top: 300px;
+	left: 100px;
+	position: absolute;
+	width: 400px;
+	height: 740px;
+	font-family: verdana;
+	font-size: 25px;
+}
+
+.bodypart {
+	text-align: center;
+	margin-top: 110px;
+}
+
+div.a {
+	border: 1px solid red;
+	margin-left: 455px;
+	text-align: center;
+	margin-right: 200px;
+	box-shadow: 0px 5px 6px #222;
+}
+
+div.b {
+	border: 1px solid red;
+	margin-left: 455px;
+	text-align: center;
+	margin-right: 200px;
+	box-shadow: 0px 10px 5px #888888;
+}
+
+div.c {
+	border: 1px solid red;
+	margin-left: 455px;
+	text-align: center;
+	margin-right: 200px;
+	box-shadow: 0px 10px 5px #888888;
+}
+
+div.d {
+	border: 1px solid red;
+	margin-left: 455px;
+	text-align: center;
+	margin-right: 200px;
+	box-shadow: 10px 10px 15px #aaaaaa;
+}
+</style>
+
+</head>
+<body>
+	<div class="header">
+		<div id="pf" class="header">
+			<h1>Employee Registration Form</h1>
+		</div>
+		<div id="profilearea" class="header">
+			<a href="Home"><font color="white">Home</font></a>
+		</div>
+		<div id="profilearea1" class="header">
+			<a href="logout"><font color="white">Logout</font></a>
+		</div>
+	</div>
+
+	<div class="body">
+		<div id="side" class="body">
+			<a href="AddEmployeeDetailsPage.html"><font color="black">Add
+					Employee Details</font></a>
+		</div>
+		<div id="side1" class="body">
+			<a href="UpdateEmployeeDetails.html"><font color="black">Update
+					Employee Details</font></a>
+		</div>
+	</div>
+
+
+	<div class="bodypart">
+		<form action="AddEmployee" method="get" class=all>
+
+			<div class="a">
+				<h2>EMPLOYEE PERSONAL DETAILS</h2>
+
+				<label> <span>EMPLOYEE ID :</span> 
+				    <input type="text" name="EMPLOYEEID" class="id" /></label><br> <br> <label>
+				<span>FIRST NAME :</span> 
+				    <input type="text" name="firstname" class="id" />
+				</label> <label> <span>LAST NAME :</span> 
+				    <input type="text" name="lastname" class="id" /></label><br> <br> 
+				<labeL>DATE	OF BIRTH:
+				    <input type="Date" name="dateofbirth">
+				</labeL> <label> <span>NATIONALITY :</span> 
+				    <input type="text" name="Nationality" class="id" /></label><br>
+				<br> GENDER: 
+				    <input type="radio" name="gender" value="male">male 
+					<input type="radio" name="gender" value="female">female 
+					<input type="radio" name="gender" value="other">others 
+				<label> <span>MARITAL STATUS:</span> 
+				    <input type="radio" name="MARITALSTATUS" value="MARRIED"> Married
+					<input type="radio" name="MARITALSTATUS" value="UNMARRIED">Unmarried<br> <br></label> <label> 
+				<span>FATHER NAME:</span>
+   				    <input type="text" name="FATHER NAME" class="id" />
+				</label> <label> <span>MOTHER NAME:</span> 
+				    <input type="text" name="MOTHER NAME" class="id" /></label><br> <br> 
+				LANGUAGE : 
+				    <input type="checkbox" name="language" value="Telugu" /> Telugu 
+					<input type="checkbox" name="language" value="English" /> English 
+					<input type="checkbox" name="language" value="Hindi" /> Hindi 
+					<input type="checkbox" name="language" value="Tamil" /> Tamil 
+					<input type="checkbox" name="language" value="Kannada" />Kannada 
+					<input type="checkbox" name="language" value="Malayalam" /> Malayalam 
+					<input type="checkbox" name="language" value="Sanskrith" />Sanskrit<br>
+				<br> <label> <span>BLOOD GROUP:</span> 
+				    <input type="text" name="BLOOD GROUP" class="id" /></label> <label> 
+				<span>MOBILE NUMBER:</span> 
+				    <input type="number" name="phonenumber"	placeholder="phonenumber" class="id" /></label><br>
+				<br> <label> <span>EMAIL:</span> 
+				    <input type="text" name="EMAIL" placeholder="email" class="id" /></label> 
+				<label> <span>PASSWORD:</span>
+					<input type="password" name="password" placeholder="password" class="id" /></label><br>
+				<br>
+				<br>
+			</div>
+			<br>
+			
+			<div class="b">
+				<h2>EMPLOYEE CONTACT DETAILS :</h2>
+				<br> <label> <span> HOME PHONE NUMBER:</span> 
+				    <input type="number" name="homenumber" placeholder="phonenumber" class="id" /></label>
+				<label> <span>ADDRESS:</span> 
+				    <input type="text" name="ADDRESS" placeholder="Address" class="addid" />
+				</label><br>
+				<br> <label> <span>CITY:</span> 
+				    <input type="text" name="CITY" placeholder="City" class="id" />
+				</label> <label> <span>STATE:</span> 
+				    <input type="text" name="State" placeholder="State" class="id" /></label><br>
+				<br> <label> <span>COUNTRY:</span> 
+				    <input type="text" name="Country" placeholder="Country" class="id" /></label> <label>
+				<span>pincode:</span> 
+				<input type="number" name="pincode"	placeholder="pincode" class="id" />
+				</label><br>
+				<br>
+				<br>
+			</div>
+			<br>
+			
+			<div class="c">
+				<h2>EMPLOYEE EDUCATIONAL DETAILS :</h2>
+				<span><h3>SSC</h3> </span> 
+				    <select name="SSC">
+					    <option></option>
+					    <option value="CLASS X">CLASS X</option>
+					    <option value="CBSE X">CBSE X</option>
+				    </select><br>
+				<br> <label> <span>NAME OF SCHOOL :</span> 
+				    <input type="text" name="Name of School" class="id" placeholder="Name of School" /></label> <label> 
+				<span>Board:</span> 
+				    <select name="sscBoard">
+						<option></option>
+						<option value="secondary board of A.P">secondary board of A.P</option>
+						<option value="secondary board oF TAMILNADU">secondary board oF TAMILNADU</option>
+						<option value="secondary board of TELANGANA">secondary board of TELANGANA</option>
+						<option value="secondary board of BANGALORE">secondary board of BANGALORE</option>
+						<option value="CBSE">CBSE</option>
+						<option value="OTHERS">OTHERS</option>
+				    </select></label><br>
+				<br> <label> <span>PERCENTAGE :</span> 
+				    <input type="NUMBER" name="PERCENTAGE" class="id" /></label> 
+				<span>YEAR OF PASSING :</span> 
+					<input type="month" name="YEAR OF PASSING"><br><br>
+				<labeL><h3>INTERMEDIATE</h3> 
+				    <select name="INTERMEDIATE">
+						<option></option>
+						<option value="M.P.C">M.P.C</option>
+						<option value="B.I.P.C">B.I.P.C</option>
+						<option value="M.E.C">M.E.C</option>
+						<option value="C.E.C">C.E.C</option>
+						<option value="H.E.C">H.E.C</option>
+						<option value="DIP-CIVIL">DIP-CIVIL</option>
+						<option value="DIP-MECH">DIP-MECH</option>
+						<option value="DIP-E.E.E">DIP-E.E.E</option>
+						<option value="DIP-E.C.E">DIP-E.C.E</option>
+						<option value="DIP-C.S.E">DIP-C.S.E</option>
+						<option value="others">OTHERS</option>
+				    </select></labeL> <br>
+				<br> <label> <span>NAME OF COLLEGE :</span> 
+				    <input type="text" name="Name of College1" class="id" placeholder="Name of College" /></label> <label> 
+				<span>Board:</span> 
+				    <select name="INTERMEDIATEBoard">
+						<option></option>
+						<option value="Board of Intermediate Education Andhra Pradesh">Board of Intermediate Education Andhra Pradesh</option>
+						<option value="Board of Intermediate Education TAMILNADU">Board of Intermediate Education TAMILNADU</option>
+						<option value="Board of Intermediate Education TELANGANA">Board	of Intermediate Education TELANGANA</option>
+						<option value="Board of Intermediate Education BANGALORE">Board	of Intermediate Education BANGALORE</option>
+						<option value="CBSE">CBSE</option>
+						<option value="JNTU A">JNTU A</option>
+						<option value="JNTU H">JNTU H</option>
+						<option value="JNTU">JNTU</option>
+						<option value="JNTU H">JNTU H</option>
+						<option value="OSMANIA">OSMANIA</option>
+						<option value="SBTET">SBTET</option>
+						<option value="OTHERS">OTHERS</option>
+				    </select></label><br>
+				<br> <label> <span>PERCENTAGE :</span> 
+				    <input type="NUMBER" name="PERCENTAGE2" class="id" /></label> 
+				<span>YEAR OF PASSING :</span> 
+				    <input type="month" name="YEAR OF PASSING2"><br><br> 
+				<labeL><h3>GRADUATION</h3> 
+				    <select name="GRADUATE">
+						<option></option>
+						<option value="CIVIL">CIVIL</option>
+						<option value="MECH">MECH</option>
+						<option value="E.E.E">E.E.E</option>
+						<option value="E.C.E">E.C.E</option>
+						<option value="C.S.E">C.S.E</option>
+						<option value="B.E">B.E</option>
+						<option value="B.COM">B.COM</option>
+						<option value="OTHERS">OTHERS</option>
+				    </select></labeL><br>
+				<br> <label> <span>NAME OF COLLEGE :</span> 
+				    <input type="text" name="Name of College2" class="id" placeholder="Name of College" /></label> <label> 
+				<span>University:</span> 
+				    <select name="GRADUATEUniversity">
+						<option></option>
+						<option value="JNTU A">JNTU A</option>
+						<option value="JNTU H">JNTU H</option>
+						<option value="JNTU">JNTU</option>
+						<option value="JNTU H">JNTU H</option>
+						<option value="OSMANIA">OSMANIA</option>
+						<option value="OTHERS">OTHERS</option>
+				    </select></label><br>
+				<br> <label> <span>PERCENTAGE :</span> 
+				    <input type="NUMBER" name="PERCENTAGE3" class="id" /></label> 
+				<span>YEAR OF PASSING :</span> 
+				    <input type="month" name="YEAR OF PASSING3"> <br><br>
+				<labeL><h3>POST GRADUATION</h3></labeL> 
+				    <select name="MASTERS">
+					    <option></option>
+						<option value="M.E-MECH">M.E-MECH</option>
+						<option value="M.E-CIVIL">M.E-CIVIL</option>
+						<option value="M.E-E.E.E">M.E-E.E.E</option>
+						<option value="M.E-E.C.E">M.E-E.C.E</option>
+						<option value="M.E-C.S.E">M.E-C.S.E</option>
+						<option value="M.B.A">M.B.A</option>
+						<option value="M.C.A">M.C.A</option>
+						<option value="OTHERS">OTHERS</option>
+				    </select> <br><br>
+				<label> <span>NAME OF COLLEGE :</span> 
+				    <input type="text" name="Name of College3" class="id" placeholder="Name of College" /></label> <label> 
+				<span>University:</span> 
+				    <select name="MASTERSUniversity">
+						<option></option>
+						<option value="JNTU A">JNTU A</option>
+						<option value="JNTU H">JNTU H</option>
+						<option value="JNTU">JNTU</option>
+						<option value="JNTU H">JNTU H</option>
+						<option value="OSMANIA">OSMANIA</option>
+						<option value="OTHERS">OTHERS</option>
+				    </select></label><br>
+				<br> <label> <span>PERCENTAGE :</span> 
+				    <input type="NUMBER" name="PERCENTAGE4" class="id" /></label> 
+				<span>YEAR OF PASSING :</span> 
+				    <input type="month" name="YEAR OF PASSING4"><br>
+				
+				<br> <labeL><h3>PhD graduation</h3></labeL> <label>
+				<span>COURSE:</span> 
+				    <input type="text" name="phdCourse" class="id" placeholder="course name" /></label><br> <br> 
+				<label> <span>NAME OF COLLEGE :</span> 
+				    <input type="text" name="Name of College4" class="id" placeholder="Name of College" /></label> 
+				<label> <span>University:</span> 
+				    <input type="text" name="phdUniversity" class="id" /></label><br><br>
+			    <label> <span>PERCENTAGE :</span> 
+				    <input type="NUMBER" name="PERCENTAGE5" class="id" /></label> 
+				<span>YEAR OF PASSING :</span> 
+				    <input type="month" name="YEAR OF PASSING5"><br>
+				<br>
+				<br>
+			</div>
+			<br>
+			<div class="d">
+
+				<h2>EMPLOYEE PROFFESIONAL DETAILS:</h2>
+				<label> <span>DATE OF JOINING:</span> 
+				    <input type="date" name="DATE OF JOINING" class="id" placeholder="Date of joining" /></label>
+				<label> <span>DATE OF RELIEVING:</span> 
+				    <input type="date" name="DATE OF RELIEVING" class="id" placeholder="Date of relieving" /></label><br><br>
+				<label> <span>JOB TITLE:</span> 
+				    <input type="text" name="JOB TITLE" class="id" placeholder="jobrole" /></label> <label>
+				<span>SALARY:</span> 
+				    <input type="NUMBER" name="SALARY" class="id" placeholder="Salary" /></label><br><br>
+				<label> <span>WORKING EXPERIENCE:</span> 
+				    <input type="TEXT" name="WORKEXPERIENCE" class="id" placeholder="work" /></label>
+				<label> <span>WORK EXPERIENCE IN FEILD:</span> 
+				    <input type="TEXT" name="WORK EXPERIENCE IN FEILD" class="addid" placeholder="     work" /></label><br>
+				<br> <label> <span>NEXT COMPANY NAME:</span> 
+				    <input type="TEXT" name="next company" class="id" placeholder=" companyname" /></label><br>
+				<br>
+				<br>
+				<br>
+			</div>
+			<br>
+			<br> 
+			<input type="reset" value="RESET"> 
+			<input TYPE="submit" VALUE="SUBMIT">
+		</form>
+	</div>
+</body>
+</html>
